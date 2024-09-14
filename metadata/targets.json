@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68",
-   "sig": "93afcf0f374c0b2c164174c78b585157976d798d8b796c255eb76edef38a9ada36af0e93cfd8299564988378d6b19415de3074687371447e2559afb0e58102952f54453cc74f7188a7535f11849f77f5005b0bd276c7628ef17a4ca0526ac4cf9858d4a4f132acaeb86a41a01906e870f266f8f0f0d025e6c64d0fdb8fe35b0a699eaeb1fb02f0ddd5590266c2111d0736ef023c7f4836f61eb3f762798b6b565fdbcc618b384bee0223d61eaab73be7a32e89b62d6b917e5838cc6313917d53c9b923a9f9e16c94104324b94473325152e31f858841cde329791442e9090aa0559da3371eb7e622e2fe2b4b8470b80447e897b4afc5f3311c3e0aa1e49ef567"
+   "sig": "98a253540d9abb1f26c06def4a5bfe79dd416714778727d28d404e96ed26f48abead6b4d20e77db657060766a45854de69a712733f9ee985474215ad88c55aebba5f72640343eff8794030da1902e9dc929cc7fa456bf61eb036b793a3c77f508694ac5c2fefbcbd9ad5891e11d8de4ecc57edf01b4c562b98fd624fedc6d524f03fde50eac565636626620e6f7f284db41a11d7b2ab772a614e90ef26ce2612131b1fb0d20ae7047222428ea76773fa096d708e8279c1ee78932c3847d354d49b792a36b101fcb1eddd3c59247a5c0fa6d98860c14ab82f3b1406429a2df62caa9aaee03ff2b860e8581d433db4f46e3ec5bbde74b10ea4655037cd4d2d356a"
   }
  ],
  "signed": {
@@ -58,7 +58,9 @@
      ],
      "name": "rdf",
      "paths": [
-      "baltimore-legref/law-rdf"
+      "baltimore-legref/law-rdf",
+      "rdf/branch",
+      "rdf/capstone"
      ],
      "terminating": true,
      "threshold": 1
@@ -89,7 +91,7 @@
     }
    ]
   },
-  "expires": "2024-12-11T19:21:33Z",
+  "expires": "2024-12-13T17:13:15Z",
   "spec_version": "1.0.0",
   "targets": {
    "mirrors.json": {
@@ -114,6 +116,6 @@
     "length": 1503
    }
   },
-  "version": 2
+  "version": 3
  }
 }
