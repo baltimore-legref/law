@@ -1,50 +1,61 @@
 {
     "repositories": {
-        "baltimore-legref/law-docs": {
-            "custom": {
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "location_regex":"~/.*\\.pdf$"
-            }
-        },
-        "baltimore-legref/law-xml": {
-            "custom": {
-                "type":"xml",
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "serve-prefix":"_uncodified_xml"
-            }
-        },
-        "baltimore-legref/law-rdf": {
-            "custom": {
-                "type":"rdf",
-                "serve":"historical",
-                "serve-prefix":"_rdf"
-            }
-        },
-        "baltimore-legref/law-html": {
-            "custom": {
-                "preview":"https://github.com/baltimore-legref/law-html-preview.git",
-                "type":"html",
-                "serve":"historical",
-                "location_regex":"/"
-            }
-        },
-        "baltimore-legref/law-xml-codified": {
-            "custom": {
-                "preview":"https://github.com/baltimore-legref/law-xml-codified-preview.git",
-                "type":"xml-codified",
-                "serve":"historical",
-                "serve-prefix":"_xml"
-            }
-        },
-        "baltimore-legref/law-static-assets": {
-            "custom": {
-                "type":"static-assets",
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "location_regex":"~.+(_document|_reader).+$"
-            }
+      "baltimore-legref/law-docs": {
+        "custom": {
+          "allow-unauthenticated-commits": true,
+          "serve": "latest",
+          "location_regex": "~/.*\\.pdf$",
+          "routes": [
+            ".*\\.pdf"
+          ]
         }
+      },
+      "baltimore-legref/law-xml": {
+        "custom": {
+          "type": "xml",
+          "allow-unauthenticated-commits": true,
+          "serve": "latest",
+          "serve-prefix": "_uncodified_xml"
+        }
+      },
+      "baltimore-legref/law-rdf": {
+        "custom": {
+          "type": "rdf",
+          "serve": "historical",
+          "serve-prefix": "_rdf"
+        }
+      },
+      "baltimore-legref/law-html": {
+        "custom": {
+          "preview": "git@github.com:baltimore-legref/law-html-preview.git",
+          "type": "html",
+          "serve": "historical",
+          "location_regex": "/",
+          "routes": [
+            ".*"
+          ]
+        }
+      },
+      "baltimore-legref/law-xml-codified": {
+        "custom": {
+          "preview": "git@github.com:baltimore-legref/law-xml-codified-preview.git",
+          "type": "xml-codified",
+          "serve": "historical",
+          "serve-prefix": "_xml"
+        }
+      },
+      "baltimore-legref/law-static-assets": {
+        "custom": {
+          "type": "static-assets",
+          "allow-unauthenticated-commits": true,
+          "serve": "latest",
+          "location_regex": "~.+(_document|_reader).+$",
+          "is_fallback": true,
+          "routes": [
+            ".*/_document/.*",
+            "_reader/.*"
+          ]
+        }
+      }
     }
-}
+  }
